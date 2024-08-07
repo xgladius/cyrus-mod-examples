@@ -1,0 +1,23 @@
+#pragma once
+#include <Cyrus/Shared.h>
+#include <Cyrus/Classes/PropertyClass.h>
+
+class RespecTieredSpellList : public PropertyClass {
+public:
+    List<unsigned int> getSpellList() { // Property Generated Getter
+      return *reinterpret_cast<List<unsigned int>*>(reinterpret_cast<uintptr_t>(this) + 0x48);
+    }
+
+    void setSpellList(List<unsigned int> val) { // Property Generated Setter
+      *reinterpret_cast<List<unsigned int>*>(reinterpret_cast<uintptr_t>(this) + 0x48) = val;
+    }
+
+    List<unsigned int> getUpgradedSpellList() { // Property Generated Getter
+      return *reinterpret_cast<List<unsigned int>*>(reinterpret_cast<uintptr_t>(this) + 0x58);
+    }
+
+    void setUpgradedSpellList(List<unsigned int> val) { // Property Generated Setter
+      *reinterpret_cast<List<unsigned int>*>(reinterpret_cast<uintptr_t>(this) + 0x58) = val;
+    }
+
+};

@@ -13,7 +13,7 @@ target_compile_definitions(chat-style PRIVATE EXPORTING_DLL)
 
 include_directories(src)
 
-set(CYRUS_LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src/Cyrus/dbghelp.lib")
+set(CYRUS_LIB_PATH "${CMAKE_CURRENT_SOURCE_DIR}/src/Cyrus/lib/dbghelp.lib")
 target_link_libraries(chat-style PRIVATE ${CYRUS_LIB_PATH})
 
 if (MSVC)
